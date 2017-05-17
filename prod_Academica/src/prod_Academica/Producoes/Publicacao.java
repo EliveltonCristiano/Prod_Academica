@@ -2,12 +2,12 @@ package prod_Academica.Producoes;
 
 import java.util.ArrayList;
 import prod_Academica.Pessoas.Colaborador;
-import prod_Academica.Projeto.Projeto;
+import prod_Academica.Projeto.Projetos;
 
 public class Publicacao {
     
     private ArrayList <Colaborador> listaColaboradores = new ArrayList <>();
-    private ArrayList <Projeto> listaProjetos = new ArrayList <>();
+    private ArrayList <Projetos> listaProjetos = new ArrayList <>();
     private String titulo;
     private String confOndeFoiPublicada;
     private int anoDePublicacao;
@@ -21,11 +21,11 @@ public class Publicacao {
         this.listaColaboradores.add(colabVinculado);
     }
 
-    public ArrayList <Projeto> getListaProjetos() {
+    public ArrayList <Projetos> getListaProjetos() {
         return listaProjetos;
     }
 
-    public void setListaProjetos(Projeto projVinculado) {
+    public void setListaProjetos(Projetos projVinculado) {
         this.listaProjetos.add(projVinculado);
     }
 
